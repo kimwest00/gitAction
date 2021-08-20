@@ -4,8 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    #run 뒤에는 실제 작동하는 코드를 넣어야 함
-    - uses: actions/checkout@v2
-    
-    - name: 파이썬 실행
-      run: python hello.py
+    #- uses: actions/checkout@v2
+    - name: 1. 파일 목록 출력
+      run: ls
+    - name: 2. 파이썬 실행
+      run: python test.py
