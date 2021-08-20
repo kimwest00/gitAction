@@ -5,9 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     #run 뒤에는 실제 작동하는 코드를 넣어야 함
-    - name: hello world 출력
-      run: echo Hello, world!
-    - name: 디렉토리 출력
-      run: ls -al
+    - uses: actions/checkout@v2
+    
     - name: 파이썬 실행
       run: python hello.py
